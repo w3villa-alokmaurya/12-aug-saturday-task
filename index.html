@@ -106,21 +106,14 @@ owl.owlCarousel({
     dots:true,
     navigation:true,
     nav:false,
-    onDragged  : callback
 });
 $('.play').on('click', function () {
-    owl.trigger('play.owl.autoplay', [2000])
+    owl.trigger('play.owl.autoplay', [1000])
 })
 $('.stop').on('click', function () {
     owl.trigger('stop.owl.autoplay')
 })
-function callback() {
-        var items = event.items.count;
-        var item = event.item.index;
-        console.log(items,item);
-    }
 
-document.querySelectorAll('.hero-left *')
 
 
  
